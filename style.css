@@ -1,0 +1,285 @@
+body {
+    background-color: #f5f2df;
+    color: #333;
+    font-family: "Yu Gothic", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    color: #e67e22;
+    font-size: 40px;
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu h2 {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.menu p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    display:inline-block;
+
+    background:#2e7d32;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    transition:0.3s;
+
+}
+
+.button:hover{
+
+    background:#1b5e20;
+
+}
+
+
+.about {
+    background-color: #ffffff;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.about h2 {
+    color: #2e7d32;
+}
+
+.access {
+    background-color: #fff8e1;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.access h2 {
+    color: #e67e22;
+}
+
+
+.info {
+    background-color: #e8f5e9;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.info h2 {
+    color: #2e7d32;
+}
+
+header{
+    background:#2e7d32;
+    padding:20px;
+}
+
+header h1{
+    color:white;
+    margin:0;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+
+.gallery{
+
+    margin-top:60px;
+
+}
+
+.gallery h2{
+
+    margin-bottom:30px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:0.3s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        background: #388e3c;
+        border-radius: 8px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.button{
+    display:inline-block;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+@media (max-width:768px){
+
+    .button{
+        display:block;
+        width:80%;
+        margin:20px auto;
+    }
+
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.menu-card{
+
+    width:350px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+.menu-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.menu-card:hover{
+
+    transform:translateY(-8px);
+
+    transition:0.3s;
+
+}
+
+.menu{
+    flex-direction:column;
+    align-items:center;
+}
+
+.menu-card{
+    width:90%;
+}
