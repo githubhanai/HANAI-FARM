@@ -19,3 +19,16 @@ li{
     max-width:400px;
 
 }
+
+
+/* ===== ブルーベリーのページの画像サイズ2列にする ===== */
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+/* ===== ブルーベリーのページの画像サイズ2列にする終わり ===== */
